@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useSession, signOut } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
-import { Menu, X, BookOpen, LogOut, User, ChevronDown } from "lucide-react";
+import { Menu, X, LogOut, User, ChevronDown } from "lucide-react";
 
 export default function Navbar() {
   const { data: session, isPending } = useSession();
@@ -50,6 +50,7 @@ export default function Navbar() {
                 src="/assets/logo-skillsphere.png"
                 alt="SkillSphere"
                 fill
+                sizes="40px"
                 className="object-contain"
               />
             </div>

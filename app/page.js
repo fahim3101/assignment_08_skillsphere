@@ -26,7 +26,6 @@ export default function HomePage() {
     .slice(0, 3);
 
   const trendingCourses = courses.filter((c) => c.trending).slice(0, 3);
-  const newCourses = courses.filter((c) => c.isNew).slice(0, 3);
 
   const learningTips = [
     {
@@ -239,6 +238,7 @@ export default function HomePage() {
                     src={inst.image}
                     alt={inst.name}
                     fill
+                    sizes="112px"
                     className="object-cover rounded-full relative z-10 ring-4 ring-indigo-500/30 group-hover:ring-indigo-500/60 transition-all"
                   />
                 </div>

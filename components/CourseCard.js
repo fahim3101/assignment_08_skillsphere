@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Star, Clock, Users, BookOpen, ArrowRight } from "lucide-react";
+import { Star, Clock, Users, ArrowRight } from "lucide-react";
 
 export default function CourseCard({ course }) {
   const levelColors = {
@@ -25,6 +25,7 @@ export default function CourseCard({ course }) {
           src={course.image}
           alt={course.title}
           fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f0c29] via-transparent to-transparent" />

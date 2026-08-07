@@ -27,6 +27,7 @@ export default function Footer() {
                   src="/assets/logo-skillsphere.png"
                   alt="SkillSphere"
                   fill
+                  sizes="40px"
                   className="object-contain"
                 />
               </div>

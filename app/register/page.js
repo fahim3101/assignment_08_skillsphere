@@ -68,7 +68,7 @@ export default function RegisterPage() {
           {/* Mobile Logo */}
           <Link href="/" className="flex items-center gap-3 mb-10 lg:hidden">
             <div className="relative w-10 h-10">
-              <Image src="/assets/logo-skillsphere.png" alt="SkillSphere" fill className="object-contain" />
+              <Image src="/assets/logo-skillsphere.png" alt="SkillSphere" fill sizes="40px" className="object-contain" />
             </div>
             <span className="text-xl font-bold gradient-text" style={{ fontFamily: "Syne, sans-serif" }}>
               SkillSphere
@@ -217,12 +217,13 @@ export default function RegisterPage() {
           src="/assets/auth-background.png"
           alt="Auth Background"
           fill
+          sizes="(min-width: 1024px) 50vw, 100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-l from-[#0f0c29]/80 to-[#302b63]/60" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-12">
           <div className="relative w-20 h-20 mb-6">
-            <Image src="/assets/logo-skillsphere.png" alt="SkillSphere" fill className="object-contain" />
+            <Image src="/assets/logo-skillsphere.png" alt="SkillSphere" fill sizes="80px" className="object-contain" />
           </div>
           <h2
             className="text-4xl font-black text-white mb-4"
